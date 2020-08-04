@@ -14,7 +14,7 @@
 
 </head>
 <body class="bg-dark">
-	<div class="wrapper">
+	<div class="wrapper" class="bg-dark">
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
           </nav>
@@ -22,7 +22,7 @@
     <div class="jumbotron">
       <h1 class="display-4">The Truth is Out There</h1>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" class="bg-dark">
         <div class="row">
           <div class="col-md-4">
             <h3>UFO Sightings: Fact of Fancy? <small>Ufologists Weigh In</small></h3>
@@ -38,20 +38,43 @@
       </div>
       <div class="container-fluid" class="bg-dark">
         <div class="row" class="bg-dark">
-          <div class="col-md-3" class="bg-dark">
-            <form class="bg-dark">
+          <div class="col-md-3">
+            <form>
                 <p>Filter Search</p>
-              </form class="bg-dark">
-              <ul class="list-group" class="bg-dark">
-                <li class="list-group-item" class="bg-dark">
-                    <label for="date">Enter Date</label>
-                    <input type="text" placeholder="1/10/2010" id="datetime"/>
-                </li>
-                <li class="list-group-item" class="bg-dark">
-                    <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+            </form>
+              <ul style="list-style: none;" class="list-group" class="bg-dark">
 
-                </li>
-            </ul>
+                    <li class="bg-dark" class="list-group-item">
+                        <label class="bg-dark" for="date">Enter Date</label> 
+                        <input type="text" placeholder="EX: 1/10/2010" id="datetime"/>
+                    </li>
+
+                    <li class="bg-dark" class="list-group-item">
+                      <label class="bg-dark" for="city">Enter City</label>
+                      <input type="text" placeholder="EX: san diego" id="city"/>
+                    </li>
+
+                    <li class="bg-dark" class="list-group-item">
+                      <label class="bg-dark" for="state">Enter State</label>
+                      <input type="text" placeholder="EX: ca" id="state"/>
+                    </li>
+
+                    <li class="bg-dark" class="list-group-item">
+                      <label class="bg-dark" for="country">Enter Country</label>
+                      <input type="text" placeholder="EX: us" id="country"/>
+                    </li>
+
+                    <li class="bg-dark" class="list-group-item">
+                      <label class="bg-dark" for="shape">Enter Shape</label>
+                      <input type="text" placeholder="EX: triangle" id="shape"/>
+                    </li>
+
+                    <li class="bg-dark" class="list-group-item">
+                      <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                    </li>
+              
+              <ul class="list-group">
+
           </div>
           <div class="col-md-9">
             <table class="table table-striped">
